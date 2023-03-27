@@ -1,0 +1,31 @@
+body {
+    color: #555090;
+    background-color: #999999;
+    font-variant: small-caps;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #607020;
+}
+
+h2 {
+    color: #998015;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #607020;
+}
+
+a {
+    color: #555090;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #708050;
+    text-decoration: underline;
+}
