@@ -30,14 +30,14 @@ a:hover {
     text-decoration: underline;
 }
 
-.pokemon h1 {
+.pokemon h2 {
     color: #690020;
-    text-align: center;
+    text-align: right;
     font-size: medium;
 }
 
 .pokemon p {
     color: #807000;
-    text-align: center;
+    text-align: right;
     font-size: small;
 }
