@@ -1,6 +1,7 @@
 body {
-    color: #555090;
-    background-color: #999999;
+    color: #907010;
+    background-image: url('img/greybg.jpg');
+    background-size: cover;
     font-variant: small-caps;
 }
 
@@ -31,13 +32,23 @@ a:hover {
 }
 
 .pokemon h2 {
-    color: #690020;
+    color: #f80303;
+    text-align: right;
+    font-size: large;
+}
+
+.pokemon p {
+    color: #ffee00;
     text-align: right;
     font-size: medium;
 }
 
-.pokemon p {
-    color: #807000;
-    text-align: right;
-    font-size: small;
+.pokemon a {
+    color: #f80303;
+    text-decoration: none;
+}
+
+.pokemon a:hover {
+    color: #998015;
+    text-decoration: underline;
 }
