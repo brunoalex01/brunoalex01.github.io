@@ -1,24 +1,66 @@
 body {
     color: #907010;
-    background-image: url('img/greybg.jpg');
+    background-image: url('img/bg3.jpg');
     background-size: cover;
     font-variant: small-caps;
 }
 
-h1 {
+.cabessa {
+    background-image: url('img/greybnnr.jpg');
+    background-position: center;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cabessa ul a {
     font-family: Arial, Helvetica, sans-serif;
+    color: #202020;
+}
+
+.astro {
+    background-image: url('img/astro.png');
+    background-position: center;
+    background-size: 50px 50px 50px 50px;
+    height: 20px;
+    width: 60px;
+}
+
+.astro a {
+    color: #202020;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.cabessact {
+    color: #059005;
     text-align: center;
-    color: #607020;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 3px #105010;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1500;
+    font-size: 20px;
 }
 
-h2 {
-    color: #998015;
+main {
+    width: 70%;
+    margin: auto;
+    background-image: url('img/bg2.jpg');
+    background-position: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #607020;
+.content-section {
+    background-color: #271f1f;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+nav {
+    margin: 15px;
+    padding: 5px;
 }
 
 a {
@@ -31,15 +73,22 @@ a:hover {
     text-decoration: underline;
 }
 
+.pokemon {
+    background-color: white;
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+}
+
 .pokemon h2 {
     color: #f80303;
-    text-align: right;
     font-size: large;
+    background-color: #998015;
+    text-align: center;
 }
 
 .pokemon p {
     color: #ffee00;
-    text-align: right;
     font-size: medium;
 }
 
@@ -51,4 +100,22 @@ a:hover {
 .pokemon a:hover {
     color: #998015;
     text-decoration: underline;
+}
+
+.rodape {
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    background-image: url('img/greybg.jpg');
+    background-position: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rodape a {
+    font-size: 15px;
+    text-shadow: 3px 3px 3px #ac8510;
+    color: #75c010;
 }
