@@ -458,14 +458,18 @@ footer {
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(255,255,255,0.2);
-    padding: 15px 0;
+    gap: 15px;
     text-align: center;
     font-size: 0.5rem;
     height: auto;
     width: auto;
     margin: 25px auto;
     padding: 15px;
-    position: inherit;
+    box-sizing: border-box;
+    flex: 1 0 auto;
+    font-family: var(--font-family);
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .qr-code-emec h2 {
@@ -478,7 +482,7 @@ footer {
 .qr-code-emec p {
     margin: 2px 0;
     color: var(--text-light);
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     margin-bottom: 10px;
 }
 
