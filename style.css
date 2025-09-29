@@ -15,7 +15,10 @@
 body {
     margin:0;
     font-family: var(--font-family);
-    background: linear-gradient(270deg, rgb(0, 129, 37, 0.3), rgb(13, 1, 88, 0.3)), url('src/logo_trasnp_35.png') no-repeat center center fixed;
+    background-image: url('src/logo_trasnp_35.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     color: var(--text-dark);
     display: flex;
     flex-direction: column;
@@ -309,32 +312,30 @@ nav a:hover {
 }
 
 footer {
+    position: relative;
     color: var(--text-light);
-    padding: 25px 0;
+    padding: 50px 20px 20px 20px;
     margin-top: 35px;
     font-size: 0.5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    background: linear-gradient(120deg, rgba(13,1,88,0.2), rgba(0,129,37,0.2)), url('src/banners/footerbg.png') no-repeat center center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    background: url('src/banners/footerbg.png') no-repeat center center;
     background-size: cover; 
     gap: 20px;
     justify-content: center;
 }
 
 .info-faesma {
-    max-width: 100%;
-    height: 90%;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 25px;
+    padding: 15px;
     flex-wrap: wrap;
     gap: 5px;
-    box-sizing: border-box;
-    flex: 1 0 auto;
     text-align: center;
     font-family: var(--font-family);
     color: var(--text-light);
@@ -347,6 +348,9 @@ footer {
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(255,255,255,0.2);
+    padding: 15px;
+    text-align: center;
+    margin: 0 10px 10px 0;
 }
 
 .info-faesma h2 {
@@ -374,6 +378,7 @@ footer {
 .footer-content p {
     margin: 10px 0;
     text-align: center;
+    color: var(--text-light)
 }
 
 .polos {
@@ -382,15 +387,16 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: 5px;
     background: rgba(0,0,0,0.5);
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(255,255,255,0.2);
-    padding: 5px 0;
+    padding: 15px;
     text-align: center;
+    margin: 0 10px 10px 0;
 }
 
 .polos p {
@@ -449,12 +455,25 @@ footer {
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(255,255,255,0.2);
-    padding: 15px 0;
+    padding: 0 15px 15px 15px;
     text-align: center;
     font-size: 0.5rem;
     height: 60%;
     margin: 0 auto;
     position: inherit;
+}
+
+.qr-code-emec h2 {
+    margin: 0;
+    font-size: 1.0rem;
+    color: var(--primary-green);
+    margin-bottom: 5px;
+}
+
+.qr-code-emec p {
+    margin: 2px 0;
+    color: var(--text-light);
+    font-size: 0.7rem;
 }
 
 .logo-footer {
@@ -483,6 +502,9 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
     .card-list {
         flex-direction: column;
         align-items: center;
@@ -494,8 +516,5 @@ footer {
     .footer-content {
         flex-direction: column;
         text-align: center;
-    }
-    .social-media {
-        width: 100%;
     }
 }
