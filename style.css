@@ -15,7 +15,10 @@
 body {
     margin:0;
     font-family: var(--font-family);
-    background: linear-gradient(270deg, rgb(0, 129, 37, 0.3), rgb(13, 1, 88, 0.3)), url('src/logo_trasnp_35.png') no-repeat center center fixed;
+    background-image: url('src/logo_trasnp_35.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     color: var(--text-dark);
     display: flex;
     flex-direction: column;
@@ -309,44 +312,45 @@ nav a:hover {
 }
 
 footer {
+    position: relative;
     color: var(--text-light);
-    padding: 25px 0;
+    padding: 50px 20px 20px 20px;
     margin-top: 35px;
     font-size: 0.5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    background: linear-gradient(120deg, rgba(13,1,88,0.2), rgba(0,129,37,0.2)), url('src/banners/footerbg.png') no-repeat center center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    background: url('src/banners/footerbg.png') no-repeat center center;
     background-size: cover; 
     gap: 20px;
     justify-content: center;
 }
 
 .info-faesma {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 25px;
+    padding: 15px;
     flex-wrap: wrap;
     gap: 5px;
-    box-sizing: border-box;
-    flex: 1 0 auto;
     text-align: center;
     font-family: var(--font-family);
     color: var(--text-light);
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.5;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.5);
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(255,255,255,0.2);
+    padding: 15px;
+    text-align: center;
+    margin: 0 10px 10px 0;
 }
 
 .info-faesma h2 {
@@ -374,43 +378,36 @@ footer {
 .footer-content p {
     margin: 10px 0;
     text-align: center;
+    color: var(--text-light)
 }
 
 .polos {
-    position: relative;
-    margin: 0 auto;
+    position: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2px;
-    background: rgba(0,0,0,0.7);
+    gap: 5px;
+    background: rgba(0,0,0,0.5);
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(255,255,255,0.2);
-    padding: 5px 0;
+    padding: 15px;
     text-align: center;
-    height: auto;
-    width: 70%;
-    box-sizing: border-box;
-    flex: 1 0 auto;
-    font-family: var(--font-family);
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 1.5;
+    margin: 0 10px 10px 0;
 }
 
 .polos p {
     margin: 2px 0;
     color: var(--text-light);
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 .polos h2 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--primary-green);
     margin-bottom: 5px;
 }
@@ -452,29 +449,23 @@ footer {
     text-decoration: none;
     font-size: 0.5rem;
     transition: color 0.2s;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.5);
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(255,255,255,0.2);
-    gap: 15px;
+    padding: 0 15px 15px 15px;
     text-align: center;
     font-size: 0.5rem;
-    height: auto;
-    width: auto;
-    margin: 25px auto;
-    padding: 15px;
-    box-sizing: border-box;
-    flex: 1 0 auto;
-    font-family: var(--font-family);
-    font-weight: 600;
-    letter-spacing: 1px;
+    height: 60%;
+    margin: 0 auto;
+    position: inherit;
 }
 
 .qr-code-emec h2 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.0rem;
     color: var(--primary-green);
     margin-bottom: 5px;
 }
@@ -482,8 +473,7 @@ footer {
 .qr-code-emec p {
     margin: 2px 0;
     color: var(--text-light);
-    font-size: 0.6rem;
-    margin-bottom: 10px;
+    font-size: 0.7rem;
 }
 
 .logo-footer {
@@ -491,17 +481,17 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
+    width: 175px;
     gap: 5px;
     text-align: center;
 }
 
 .copyright {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     margin-top: 0;
     color: var(--text-light);
-    opacity: 0.7;
-    background: rgba(0,0,0,1);
+    opacity: 0.5;
+    background: rgba(0,0,0,0.9);
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
     backdrop-filter: blur(5px);
@@ -510,9 +500,11 @@ footer {
     padding: 5px;
 }
 
-
 /* Responsividade */
 @media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
     .card-list {
         flex-direction: column;
         align-items: center;
@@ -524,8 +516,5 @@ footer {
     .footer-content {
         flex-direction: column;
         text-align: center;
-    }
-    .social-media {
-        width: 100%;
     }
 }
