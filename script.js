@@ -5,17 +5,17 @@ const cursos = {
         { 
             titulo: "Letras - Licenciatura", 
             desc: "Curso de Letras com foco em metodologias ativas.", 
-            img: "src/cursos/letras.png",
+            img: "src/cursos/letras.jpg",
         },
         { 
             titulo: "Pedagogia - Licenciatura", 
             desc: "Formação completa em Pedagogia, com professores renomados.", 
-            img: "src/cursos/pedagogia.png",
+            img: "src/cursos/pedagogia.jpg",
         },
         { 
             titulo: "Educação Especial - Licenciatura", 
             desc: "Educação Especial com ênfase em inclusão social.", 
-            img: "src/cursos/educacaoespecial1.png",
+            img: "src/cursos/ed-especial.jpg",
         },
     ],
     // Cursos de Pós-Graduação EAD
@@ -23,7 +23,7 @@ const cursos = {
         { 
             titulo: "Educação Especial e Inclusiva", 
             desc: "Especialização completa em Educação Especial e Inclusiva.", 
-            img: "",
+            img: "src/cursos/ed-inclusiva.jpg",
         },
         { 
             titulo: "Psicopedagogia e Ludopedagogia", 
@@ -41,17 +41,17 @@ const cursos = {
         { 
             titulo: "Logística", 
             desc: "Tecnologia e inovação em logística.", 
-            img: "src/cursos/logistica.png",
+            img: "src/cursos/logistica.jpg",
         },
         { 
             titulo: "Processos Gerenciais", 
             desc: "Gestão de pessoas e empresas para o futuro.", 
-            img: "src/cursos/processosgerenciais.png",
+            img: "src/cursos/p-gerais.jpg",
         },
         { 
             titulo: "Gestão Ambiental", 
             desc: "Gestão de recursos naturais e sustentabilidade.", 
-            img: "src/cursos/gestaoamb.png",
+            img: "src/cursos/g-ambiental.jpg",
         },
     ]
 };
@@ -63,6 +63,7 @@ function createCard(curso) {
             </div>
             <h2>${curso.titulo}</h2>
             <p>${curso.desc}</p>
+            <button class="saiba-mais-btn">Saiba Mais</button>
         </div>
     `;
 }
