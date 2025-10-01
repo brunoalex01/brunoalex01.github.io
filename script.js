@@ -3,36 +3,38 @@ const cursos = {
     // Cursos de Graduação EAD
     graduacao: [
         { 
-            titulo: "Letras - Licenciatura", 
-            desc: "Curso de Letras com foco em metodologias ativas.", 
+            titulo: "Letras", 
             img: "src/cursos/letras.jpg",
         },
         { 
-            titulo: "Pedagogia - Licenciatura", 
-            desc: "Formação completa em Pedagogia, com professores renomados.", 
+            titulo: "Pedagogia", 
             img: "src/cursos/pedagogia.jpg",
         },
         { 
-            titulo: "Educação Especial - Licenciatura", 
-            desc: "Educação Especial com ênfase em inclusão social.", 
+            titulo: "Educação Especial", 
             img: "src/cursos/ed-especial.jpg",
+        },
+         { 
+            titulo: "História", 
+            img: "src/cursos/historia.jpg",
+        },
+         { 
+            titulo: "Educação Física", 
+            img: "src/cursos/ed-fisica.jpg",
         },
     ],
     // Cursos de Pós-Graduação EAD
     posGraduacao: [
         { 
             titulo: "Educação Especial e Inclusiva", 
-            desc: "Especialização completa em Educação Especial e Inclusiva.", 
             img: "src/cursos/ed-inclusiva.jpg",
         },
         { 
             titulo: "Psicopedagogia e Ludopedagogia", 
-            desc: "Especialização completa em Psicopedagogia e Ludopedagogia.", 
             img: "",
         },
         { 
             titulo: "Educação Física Escolar e Interdisciplinaridade", 
-            desc: "Especialização completa em Educação Física Escolar e Interdisciplinaridade.", 
             img: "",
         },
     ],
@@ -40,18 +42,19 @@ const cursos = {
     tecnologo: [
         { 
             titulo: "Logística", 
-            desc: "Tecnologia e inovação em logística.", 
             img: "src/cursos/logistica.jpg",
         },
         { 
             titulo: "Processos Gerenciais", 
-            desc: "Gestão de pessoas e empresas para o futuro.", 
             img: "src/cursos/p-gerais.jpg",
         },
         { 
             titulo: "Gestão Ambiental", 
-            desc: "Gestão de recursos naturais e sustentabilidade.", 
             img: "src/cursos/g-ambiental.jpg",
+        },
+         { 
+            titulo: "Recursos Humanos", 
+            img: "src/cursos/ed-especial.jpg",
         },
     ]
 };
@@ -62,7 +65,6 @@ function createCard(curso) {
                 ${curso.img ? '' : 'Espaço para imagem'}
             </div>
             <h2>${curso.titulo}</h2>
-            <p>${curso.desc}</p>
             <button class="saiba-mais-btn">Saiba Mais</button>
         </div>
     `;
@@ -82,7 +84,7 @@ const slides = [
     { img: 'src/slides/slide3.png', alt: 'Slide 3' }
 ];
 
-let slideIndex = 1.5;
+let slideIndex = 1;
 let slideInterval;
 
 function initializeSlideshow() {
@@ -145,7 +147,7 @@ function startAutoSlide() {
     slideInterval = setInterval(() => {
         slideIndex++;
         showSlides(slideIndex);
-    }, 7000); // Muda slide a cada 7 segundos
+    }, 5000); // Muda slide a cada 7 segundos
 }
 
 function stopAutoSlide() {
