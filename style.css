@@ -166,7 +166,7 @@ nav a:hover {
 .courses-container {
     background-color: var(--primary-blue);
     padding: 20px 20px;
-    margin: 20px 0;
+    margin: 20px;
     border-radius: 20px;
 }
 
