@@ -5,37 +5,43 @@ const cursos = {
         { 
             titulo: "Letras", 
             img: "src/cursos/letras.jpg",
+            url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=11",
         },
         { 
             titulo: "Pedagogia", 
             img: "src/cursos/pedagogia.jpg",
+            url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=3"
         },
         { 
             titulo: "Educação Especial", 
             img: "src/cursos/ed-especial.jpg",
+            url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=7"
         },
          { 
             titulo: "História", 
             img: "src/cursos/historia.jpg",
+            url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=1"
         },
          { 
             titulo: "Educação Física", 
             img: "src/cursos/ed-fisica.jpg",
+            url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=8"
         },
     ],
     // Cursos de Pós-Graduação EAD
     posGraduacao: [
+        // { 
+            // titulo: "Educação Especial e Inclusiva", 
+            // img: "src/cursos/ed-inclusiva.jpg",
+        // },
+        // { 
+            // titulo: "Psicopedagogia e Ludopedagogia", 
+            // img: "",
+        // },
         { 
-            titulo: "Educação Especial e Inclusiva", 
-            img: "src/cursos/ed-inclusiva.jpg",
-        },
-        { 
-            titulo: "Psicopedagogia e Ludopedagogia", 
+            titulo: "Alfabetização e Letramento", 
             img: "",
-        },
-        { 
-            titulo: "Educação Física Escolar e Interdisciplinaridade", 
-            img: "",
+            url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=9"
         },
     ],
     // Cursos de Tecnólogo EAD
@@ -43,18 +49,27 @@ const cursos = {
         { 
             titulo: "Logística", 
             img: "src/cursos/logistica.jpg",
+            url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=2"
         },
         { 
             titulo: "Processos Gerenciais", 
             img: "src/cursos/p-gerais.jpg",
+            url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=4"
         },
         { 
             titulo: "Gestão Ambiental", 
             img: "src/cursos/g-ambiental.jpg",
+            url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=6"
         },
-         { 
-            titulo: "Recursos Humanos", 
-            img: "src/cursos/ed-especial.jpg",
+        { 
+            titulo: "Gestão de Recursos Humanos", 
+            img: "src/cursos/rh.jpg",
+            url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=5"
+        },
+        { 
+            titulo: "Gestão Financeira", 
+            img: "",
+            url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=10"
         },
     ]
 };
@@ -65,7 +80,10 @@ function createCard(curso) {
                 ${curso.img ? '' : 'Espaço para imagem'}
             </div>
             <h2>${curso.titulo}</h2>
-            <button class="saiba-mais-btn">Saiba Mais</button>
+            <a href="${curso.url}" class="saiba-mais">
+                 <button class="saiba-mais-btn">Saiba Mais</button>
+            </a>
+           
         </div>
     `;
 }
