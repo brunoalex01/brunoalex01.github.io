@@ -70,8 +70,8 @@ body {
     top: 0;
     right: 0;
     width: 60%;
-    height: 100%;
-    background-color: rgba(0, 0, 0);
+    height: 70%;
+    background-color: var(--primary-blue);
     flex-direction: column;
     align-items: center;
 }
