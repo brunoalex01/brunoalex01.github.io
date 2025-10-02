@@ -183,6 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeSlideshow();
 });
 
+//Clique dos botões menu mobile
 menuButton.addEventListener("click", function() {
     mobileMenu.classList.add("flex");
 });
