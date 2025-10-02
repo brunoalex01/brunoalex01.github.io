@@ -1,16 +1,3 @@
-//Top-bar
-const menuButton = document.querySelector("#menuButton");
-const closeButton = document.querySelector("#closeButton");
-const mobileMenu = document.querySelector("#mobileMenu");
-
-menuButton.addEventListener("click", function() {
-    mobileMenu.classList.add("flex");
-});
-
-closeButton.addEventListener("click", function() {
-    mobileMenu.classList.remove("flex");
-});
-
 // Dados dos cursos EAD
 const cursos = {
     // Cursos de Graduação EAD
@@ -191,4 +178,16 @@ document.addEventListener('DOMContentLoaded', () => {
     loadCategoryCards(cursos.posGraduacao, 'pos-graduacao-list');
     loadCategoryCards(cursos.tecnologo, 'tecnologo-list');
     initializeSlideshow();
+});
+//Top-bar
+const menuButton = document.querySelector("#menuButton");
+const closeButton = document.querySelector("#closeButton");
+const mobileMenu = document.querySelector("#mobileMenu");
+
+menuButton.addEventListener("click", function() {
+    mobileMenu.classList.add("flex");
+});
+
+closeButton.addEventListener("click", function() {
+    mobileMenu.classList.remove("flex");
 });
