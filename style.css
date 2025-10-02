@@ -27,29 +27,6 @@ body {
     min-height: 100vh;
 }
 
-/* header {
-    position: relative;      
-    background: linear-gradient(120deg, rgba(13,1,88,0.9), rgba(0,129,37,0.9)), url('src/banners/headerbg.jpeg') no-repeat center center;
-    background-size: cover;
-    text-align: center;
-    color: var(--text-light);
-    padding: 35px 0 25px 0;
-    width: 100%;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.0rem;
-    letter-spacing: 2px;
-}
-
- .top-bar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px 20px;
-} */
-
 .navbar {
     position: relative;
     top: 0;
@@ -138,41 +115,9 @@ header h1 {
     align-self: end;
 }
 
-/* .area-aluno {
-    background-color: var(--accent);
-    color: var(--primary-blue);
-    padding: 10px 10px 10px 35px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-family: var(--font-family), sans-serif;
-    font-weight: bold;
-    font-size: 0.8rem;
-    transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
-    box-shadow: 0 4px 8px rgba(92,225,230,0.2);
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    margin: 10px;
+.flex {
+    display: flex;
 }
-
-.area-aluno::before {
-    content: '';
-    position: absolute;
-    left: 10px;
-    width: 16px;
-    height: 16px;
-    background-image: url('src/favicon.ico');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    pointer-events: none;
-}
-
-.area-aluno:hover {
-    background-color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(92,225,230,0.3);
-} */
 
 .section-title {
     position: center;
@@ -372,7 +317,7 @@ header h1 {
     opacity: 0.9;
 }
 
-footer {
+.footer {
     position: relative;
     color: var(--text-light);
     padding: 50px 20px 20px 20px;
@@ -381,7 +326,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: auto;
     background: url('src/banners/footerbg.png') no-repeat center center;
