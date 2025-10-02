@@ -1,3 +1,6 @@
+const menuButton = document.querySelector("#menuButton");
+const closeButton = document.querySelector("#closeButton");
+const mobileMenu = document.querySelector("#mobileMenu");
 // Dados dos cursos EAD
 const cursos = {
     // Cursos de Graduação EAD
@@ -179,10 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loadCategoryCards(cursos.tecnologo, 'tecnologo-list');
     initializeSlideshow();
 });
-//Top-bar
-const menuButton = document.querySelector("#menuButton");
-const closeButton = document.querySelector("#closeButton");
-const mobileMenu = document.querySelector("#mobileMenu");
 
 menuButton.addEventListener("click", function() {
     mobileMenu.classList.add("flex");
