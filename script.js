@@ -1,13 +1,13 @@
 //Top-bar
 const menuButton = document.querySelector("#menuButton");
-const closedButton = document.querySelector("#closedButton");
+const closeButton = document.querySelector("#closeButton");
 const mobileMenu = document.querySelector("#mobileMenu");
 
 menuButton.addEventListener("click", function() {
     mobileMenu.classList.add("flex");
 });
 
-closedButton.addEventListener("click", function() {
+closeButton.addEventListener("click", function() {
     mobileMenu.classList.remove("flex");
 });
 
