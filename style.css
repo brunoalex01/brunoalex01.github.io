@@ -99,7 +99,7 @@ body {
     color: var(--accent);
 }
 
-.menu {
+.menu, .close {
     font-size: 1.5rem;
     background: none;
     border: none;
@@ -109,11 +109,6 @@ body {
 }
 
 .close {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: var(--text-light);
-    cursor: pointer;
     margin-top: 15px;
     margin-bottom: 15px;
     display: block;
