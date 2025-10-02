@@ -10,6 +10,7 @@
     --text-light: #f0f0f0;
     --shadow-dark: rgba(0,0,0,0.3);
     --font-family: 'Poppins', sans-serif;
+    --border: rgba(255,255,255,0.2);
 }
 
 body {
@@ -26,7 +27,7 @@ body {
     min-height: 100vh;
 }
 
-header {
+/* header {
     position: relative;      
     background: linear-gradient(120deg, rgba(13,1,88,0.9), rgba(0,129,37,0.9)), url('src/banners/headerbg.jpeg') no-repeat center center;
     background-size: cover;
@@ -42,32 +43,102 @@ header h1 {
     letter-spacing: 2px;
 }
 
-.top-bar {
+ .top-bar {
     position: absolute;
     top: 0;
     right: 0;
     padding: 10px 20px;
+} */
+
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(150deg, var(--primary-blue), var(--primary-green));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-nav {
-    margin-top: 2px;
-    margin-bottom: 2px;
+.nav-links-desktop {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
+}
+
+.nav-links-desktop li {
+    padding: 0 15px;
+}
+
+.nav-links-desktop a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links-desktop a:hover {
+    color: var(--accent);
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
     align-items: center;
 }
-nav a {
-    color: var(--accent);
-    text-decoration: none;
-    margin: 0 18px;
-    font-weight: bold;
-    transition: color 0.2s;
-}
-nav a:hover {
-    color: #fff;
+
+.nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    width: 80%;
+    list-style: none;
+    padding: 0;
 }
 
-.area-aluno {
+.nav-links-mobile li {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+}
+
+.nav-links-mobile a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links-mobile a:hover {
+    color: var(--accent);
+}
+
+.menu, .close {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    display: none;
+}
+
+.close {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    align-self: end;
+}
+
+/* .area-aluno {
     background-color: var(--accent);
     color: var(--primary-blue);
     padding: 10px 10px 10px 35px;
@@ -101,7 +172,7 @@ nav a:hover {
     background-color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(92,225,230,0.3);
-}
+} */
 
 .section-title {
     position: center;
@@ -237,7 +308,7 @@ nav a:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
     color: white;
     padding: 16px;
     border: none;
@@ -491,6 +562,12 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .nav-links-desktop{
+        display: none;
+    }
+    .menu {
+        display: block;
+    }    
     footer {
         flex-direction: column;
     }

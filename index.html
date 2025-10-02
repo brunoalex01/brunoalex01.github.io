@@ -12,14 +12,33 @@
     <title>FAESMA - Faculdade Alcance de Ensino Superior do Maranhão</title>
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <a href="https://app.faesma.com.br/projetos/nucleo/uteis/login.php?&tid=0&lid=0&pid=24&arq_ret=R5QT1WSRQBMCVQVPFFQSF99MCT5RT44Q9WRW0RBM0FMM5QQ4" class="area-aluno">Área do Aluno</a>
-        </div>
-        <nav>
-            <img src="src/banners/FAESMA SEM FUNDO LETRA BRANCA.png" alt="Logo FAESMA" width="25%">
-        </nav>
-    </header>
+    <header class="navbar">
+            <div class="nav-logo"><img src="src/favicon.ico" alt="FAESMA Logo"></div>
+            <ul class="nav-links-desktop">
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Matrícula</a></li>
+                <li><a href="#">Área do Aluno</a></li>
+                <li><a href="#">Menu Acessível</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobile-menu">
+                <button class="close" id="closeButton">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="nav-links-mobile">
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Matrícula</a></li>
+                    <li><a href="#">Área do Aluno</a></li>
+                    <li><a href="#">Menu Acessível</a></li>
+                </ul> 
+            </div>
+            <button class="menu" id="menuButton">
+                    <i class="fas fa-bars"></i>
+            </button>                   
+        </header>
         <!-- Seção de Slideshow -->
         <section class="slideshow-section">
             <div class="slideshow">
@@ -41,26 +60,17 @@
         <section class="courses-container">
             <h2 class="section-title">Graduação EAD</h2>
             <div class="card-list" id="graduacao-list"></div>
-            <!-- a href="https://app.faesma.com.br/captacao/public/filtro-curso" class="saiba-mais-btn">
-                Saiba Mais
-            </a-->
         </section>
         <!-- Seção de Pós-Graduação EAD -->
         <section class="courses-container">
             <h2 class="section-title">Pós-Graduação EAD</h2>
             <div class="card-list" id="pos-graduacao-list"></div>
-            <!--a href="https://app.faesma.com.br/captacao/public/filtro-curso" class="saiba-mais-btn">
-                Saiba Mais
-            </a-->
         </section>
         <!-- Seção de Tecnólogo EAD -->
         <section class="courses-container">
             <h2 class="section-title">Tecnólogo EAD</h2>
             <div class="card-list" id="tecnologo-list"></div>
             </div>
-            <!--a href="https://app.faesma.com.br/captacao/public/filtro-curso" class="saiba-mais-btn">
-                Saiba Mais
-            </a-->
         </section>
     <footer>
         <div class="info-faesma">
