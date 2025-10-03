@@ -43,7 +43,7 @@ const cursos = {
         // },
         { 
             titulo: "Alfabetização e Letramento", 
-            img: "",
+            img: "src/cursos/alfabetizacao.jpg",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=9"
         },
     ],
@@ -71,7 +71,7 @@ const cursos = {
         },
         { 
             titulo: "Gestão Financeira", 
-            img: "",
+            img: "src/cursos/financeira.jpg",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=10"
         },
     ]
