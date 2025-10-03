@@ -488,17 +488,11 @@ body {
     position: inherit;
 }
 
-.qr-code-emec h2 {
-    margin: 0;
-    font-size: 1.0rem;
-    color: var(--primary-green);
-    margin-bottom: 5px;
-}
-
 .qr-code-emec p {
-    margin: 2px 0;
+    margin: 5px 0;
     color: var(--text-light);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    padding: 5px;
 }
 
 .logo-footer {
