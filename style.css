@@ -328,6 +328,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    flex-basis: calc(100% / 3);
     justify-content: space-between;
     align-items: center;
     height: auto;
@@ -460,7 +461,7 @@ body {
     color: var(--text-light);
     text-decoration: none;
     margin: 0 auto;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     transition: color 0.2s;
     padding: 10px;
 }
@@ -472,7 +473,6 @@ body {
 .qr-code-emec {
     color: var(--text-light);
     text-decoration: none;
-    font-size: 0.5rem;
     transition: color 0.2s;
     background: rgba(0,0,0,0.7);
     border-radius: 15px;
@@ -489,7 +489,7 @@ body {
 }
 
 .qr-code-emec p {
-    margin: 5px 0;
+    margin: 2px 0;
     color: var(--text-light);
     font-size: 0.8rem;
     padding: 5px;
@@ -518,7 +518,7 @@ body {
     padding: 5px;
 }
 
-.privacy-policy {
+.privacy-policy, .sobre {
     color: var(--text-light);
     text-decoration: none;
     font-size: 1rem;
@@ -537,7 +537,7 @@ body {
     margin-bottom: 20px;
 }
 
-.privacy-policy h1, h2, h3 {
+.privacy-policy, .sobre h1, h2, h3 {
     text-align: center;
 }
 
@@ -547,6 +547,10 @@ body {
 
 .privacy-policy a:hover {
     color: var(--accent);
+}
+
+.sobre b {
+    color: var(--primary-green)
 }
 
 /* Responsividade */
