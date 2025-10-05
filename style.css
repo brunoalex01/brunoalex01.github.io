@@ -38,7 +38,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 0;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
@@ -256,7 +256,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0,0,0,0.3);
-    color: white;
+    color: var(--text-light);
     padding: 16px;
     border: none;
     cursor: pointer;
@@ -268,7 +268,7 @@ body {
 .next { right: 10px; }
 
 .prev:hover, .next:hover {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.5);
 }
 
 .dots {
@@ -283,7 +283,7 @@ body {
     height: 12px;
     width: 12px;
     margin: 0 5px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.2);
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
@@ -291,7 +291,7 @@ body {
 }
 
 .dot.active, .dot:hover {
-    background-color: white;
+    background-color: rgba(255, 255, 255,0.6);
 }
 
 .info-section {
@@ -332,7 +332,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: auto;
-    background: url('src/banners/footerbg.png') no-repeat center center;
+    background: linear-gradient(75deg, var(--primary-blue), var(--primary-green));
     background-size: cover; 
     gap: 20px;
     justify-content: center;
@@ -380,6 +380,7 @@ body {
     color: var(--text-light);
     text-decoration: none;
     transition: color 0.2s;
+    cursor: pointer;
 }
 
 .info-faesma a:hover {

@@ -46,7 +46,7 @@ const cursos = {
             img: "src/cursos/alfabetizacao.jpg",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=9"
         },
-    ],
+    ],   
     // Cursos de Tecnólogo EAD
     tecnologo: [
         { 
@@ -168,7 +168,7 @@ function startAutoSlide() {
     slideInterval = setInterval(() => {
         slideIndex++;
         showSlides(slideIndex);
-    }, 5000); // Muda slide a cada 7 segundos
+    }, 5000); // Muda slide a cada 5 segundos
 }
 
 function stopAutoSlide() {
