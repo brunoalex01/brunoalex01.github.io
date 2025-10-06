@@ -234,7 +234,7 @@ body {
     margin: 0 auto;
     overflow: hidden;
     box-shadow: 0 5px 15px var(--primary-green);
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .slide-container {
@@ -295,17 +295,24 @@ body {
 }
 
 .info-section {
-    margin: 40px 0;
-    padding: 0 20px;
+    margin: 20px 0;
+    padding: 10px;
 }
 
 .info-card {
-    display: flex;
-    max-width: 1080px;
+    position: relative;
+    max-width: 1000px;
     margin: 0;
     overflow: hidden;
     box-shadow: 0 5px 15px var(--primary-green);
-    border-radius: 25px;
+    border-radius: 5px;
+    min-width: 100%;
+    display: flex;
+}
+
+.info-card img {
+    width: 100%;
+    height: 100%;
 }
 
 .footer {
@@ -565,5 +572,9 @@ body {
     .footer-content {
         flex-direction: column;
         text-align: center;
+    }
+    .info-section {
+        width: 80%;
+        height: auto;
     }
 }
