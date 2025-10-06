@@ -81,7 +81,7 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
-    width: 80%;
+    width: 100%;
     list-style: none;
     padding: 0;
 }
@@ -182,7 +182,7 @@ body {
 }
 
 .courses-container {
-    background-color: var(--primary-blue);
+    background-color: rgb(13, 1, 88, 0.9);
     padding: 20px 20px;
     margin: 20px;
     border-radius: 20px;
@@ -549,6 +549,21 @@ body {
 .sobre b {
     color: var(--primary-green)
 }
+
+
+/* .high-contrast {
+    background-color: black;
+    color: white;
+}
+#acessibilidade-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+} */
 
 /* Responsividade */
 @media (max-width: 768px) {

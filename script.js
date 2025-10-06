@@ -7,43 +7,35 @@ const cursos = {
     graduacao: [
         { 
             titulo: "Letras", 
-            img: "src/cursos/letras.jpg",
+            img: "src/cursos/letras.jpg", alt: "Curso de Letras",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=11",
         },
         { 
             titulo: "Pedagogia", 
-            img: "src/cursos/pedagogia.jpg",
+            img: "src/cursos/pedagogia.jpg", alt: "Curso de Pedagogia",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=3"
         },
         { 
             titulo: "Educação Especial", 
-            img: "src/cursos/ed-especial.jpg",
+            img: "src/cursos/ed-especial.jpg", alt:"Curso de Educação Especial",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=7"
         },
          { 
             titulo: "História", 
-            img: "src/cursos/historia.jpg",
+            img: "src/cursos/historia.jpg", alt:"Curso de História",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=1"
         },
          { 
             titulo: "Educação Física", 
-            img: "src/cursos/ed-fisica.jpg",
+            img: "src/cursos/ed-fisica.jpg", alt:"Curso de Educação Física",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=8"
         },
     ],
     // Cursos de Pós-Graduação EAD
     posGraduacao: [
-        // { 
-            // titulo: "Educação Especial e Inclusiva", 
-            // img: "src/cursos/ed-inclusiva.jpg",
-        // },
-        // { 
-            // titulo: "Psicopedagogia e Ludopedagogia", 
-            // img: "",
-        // },
         { 
             titulo: "Alfabetização e Letramento", 
-            img: "src/cursos/alfabetizacao.jpg",
+            img: "src/cursos/alfabetizacao.jpg", alt:"Pós-Graduação em Alfabetização e Letramento",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=9"
         },
     ],   
@@ -51,27 +43,27 @@ const cursos = {
     tecnologo: [
         { 
             titulo: "Logística", 
-            img: "src/cursos/logistica.jpg",
+            img: "src/cursos/logistica.jpg", alt:"Curso de Logística",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=2"
         },
         { 
             titulo: "Processos Gerenciais", 
-            img: "src/cursos/p-gerais.jpg",
+            img: "src/cursos/p-gerais.jpg", alt:"Curso de Processos Gerenciais",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=4"
         },
         { 
             titulo: "Gestão Ambiental", 
-            img: "src/cursos/g-ambiental.jpg",
+            img: "src/cursos/g-ambiental.jpg", alt:"Curso de Gestão Ambiental",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=6"
         },
         { 
             titulo: "Gestão de Recursos Humanos", 
-            img: "src/cursos/rh.jpg",
+            img: "src/cursos/rh.jpg", alt: "Curso de Gestão em Recursos Humanos",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=5"
         },
         { 
             titulo: "Gestão Financeira", 
-            img: "src/cursos/financeira.jpg",
+            img: "src/cursos/financeira.jpg", alt:"Curso de Gestão Financeira",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=10"
         },
     ]
@@ -191,3 +183,11 @@ menuButton.addEventListener("click", function() {
 closeButton.addEventListener("click", function() {
     mobileMenu.classList.remove("flex");
 });
+
+//Botão Acessibilidade
+//const toggleContrastButton = document.getElementById('toggleContrast');
+//const body = document.body;
+
+//toggleContrastButton.addEventListener('click', () => {
+    //body.classList.toggle('high-contrast');
+//});
