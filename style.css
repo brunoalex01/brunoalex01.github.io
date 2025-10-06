@@ -300,23 +300,12 @@ body {
 }
 
 .info-card {
-    background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
-    color: white;
-    border-radius: 15px;
-    padding: 30px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-.info-card h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.info-card p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    opacity: 0.9;
+    display: flex;
+    max-width: 1080px;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--primary-green);
+    border-radius: 25px;
 }
 
 .footer {
