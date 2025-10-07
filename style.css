@@ -332,6 +332,7 @@ body {
     background-size: cover; 
     gap: 20px;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .info-faesma {
