@@ -256,7 +256,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.1);
     color: var(--text-light);
     padding: 16px;
     border: none;
@@ -523,9 +523,9 @@ body {
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.2s;
-    background: rgba(0,0,0,0.8);
+    background: linear-gradient(150deg, var(--primary-green), var(--primary-blue));
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 20px var(--primary-green);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(255,255,255,0.2);
