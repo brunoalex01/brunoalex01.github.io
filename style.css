@@ -225,7 +225,8 @@ body {
 
 .slideshow-section {
     margin: 0 auto;
-    padding: 110px 0;
+    padding-top: 110px;
+    padding-bottom: 25px;
 }
 
 .slideshow {
@@ -295,8 +296,9 @@ body {
 }
 
 .info-section {
-    margin: 20px 0;
+    margin: auto;
     padding: 10px;
+    padding-bottom: 25px;
 }
 
 .info-card {
@@ -527,16 +529,20 @@ body {
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(255,255,255,0.2);
-    padding: 15px 20px;
+    padding: 25px;
     text-align: justify;
     position: inherit;
     box-sizing: border-box;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin-top: 110px;
+    margin-bottom: 10px;
 }
 
 .privacy-policy, .sobre h1, h2, h3 {
     text-align: center;
+}
+
+.privacy-policy p, ol, li {
+    text-align: justify;
 }
 
 .privacy-policy a {
@@ -547,10 +553,13 @@ body {
     color: var(--accent);
 }
 
-.sobre b {
-    color: var(--primary-green)
+.sobre-section {
+    padding: 15px;
 }
 
+.policy-section {
+    padding: 15px;
+}
 
 /* .high-contrast {
     background-color: black;
