@@ -225,7 +225,7 @@ body {
 
 .slideshow-section {
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 110px 0;
 }
 
 .slideshow {
@@ -255,7 +255,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.2);
     color: var(--text-light);
     padding: 16px;
     border: none;
@@ -268,7 +268,7 @@ body {
 .next { right: 10px; }
 
 .prev:hover, .next:hover {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
 }
 
 .dots {
@@ -291,7 +291,7 @@ body {
 }
 
 .dot.active, .dot:hover {
-    background-color: rgba(255, 255, 255,0.6);
+    background-color: rgba(255, 255, 255,0.3);
 }
 
 .info-section {

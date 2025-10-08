@@ -92,9 +92,10 @@ function loadCategoryCards(category, containerId) {
 
 // Configuração do Slideshow
 const slides = [
-    { img: 'src/slides/slide1.png', alt: 'Slide 1' },
-    { img: 'src/slides/slide2.png', alt: 'Slide 2' },
-    { img: 'src/slides/slide3.png', alt: 'Slide 3' }
+    { img: 'src/slides/1.jpg', alt: 'Faesma matricule-se já' },
+    { img: 'src/slides/2.jpg', alt: 'Faculdade Faesma com número de contato' },
+    { img: 'src/slides/3.jpg', alt: 'Faesma chamada para curso Pedagogia' },
+    { img: 'src/slides/4.jpg', alt: 'Quem Somos, por FAESMA' }
 ];
 
 let slideIndex = 1;
