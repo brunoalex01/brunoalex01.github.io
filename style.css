@@ -69,7 +69,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 60%;
+    width: 80%;
     height: 70%;
     background-color: var(--primary-blue);
     flex-direction: column;
@@ -80,14 +80,15 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     gap: 1rem;
-    width: 100%;
     list-style: none;
     padding: 0;
 }
 
 .nav-links-mobile li {
     border-bottom: 1px solid var(--border);
+    border-style: none;
     padding-bottom: 1rem;
 }
 
