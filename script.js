@@ -183,11 +183,3 @@ menuButton.addEventListener("click", function() {
 closeButton.addEventListener("click", function() {
     mobileMenu.classList.remove("flex");
 });
-
-//Botão Acessibilidade
-//const toggleContrastButton = document.getElementById('toggleContrast');
-//const body = document.body;
-
-//toggleContrastButton.addEventListener('click', () => {
-    //body.classList.toggle('high-contrast');
-//});
