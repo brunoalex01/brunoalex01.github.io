@@ -468,6 +468,10 @@ body {
     padding: 10px;
 }
 
+.footer-link:hover {
+    color: var(--accent);
+}
+
 .policy-link:hover {
     color: var(--accent);
 }
