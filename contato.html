@@ -13,48 +13,54 @@
 </head>
 <body>
     <header class="navbar">
-            <div class="nav-logo" aria-label="Ícone que volta ao índice">
-                <a href="index.html">
-                    <img src="src/banners/FAESMA SEM FUNDO LETRA BRANCA.png" alt="FAESMA Logo, clique para ir ao início" width="30%">                
-                </a>
-            </div>
-            <ul class="nav-links-desktop">
+        <div class="nav-logo" aria-label="Ícone que volta ao índice">
+            <a href="index.html">
+                <img src="src/banners/FAESMA SEM FUNDO LETRA BRANCA.png" alt="FAESMA Logo, clique para ir ao início" width="30%">
+            </a>
+        </div>
+        <ul class="nav-links-desktop">
+            <li><a href="index.html#cursos">Cursos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="https://app.faesma.com.br/captacao/public/selecao-curso">Matrícula</a></li>
+            <li><a href="https://app.faesma.com.br/projetos/nucleo/uteis/login.php">Área do Aluno</a></li>
+        </ul>
+        <!--Versão mobile da barra de navegação-->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close" id="closeButton">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="nav-links-mobile">
                 <li><a href="index.html#cursos">Cursos</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="https://app.faesma.com.br/captacao/public/selecao-curso">Matrícula</a></li>
                 <li><a href="https://app.faesma.com.br/projetos/nucleo/uteis/login.php">Área do Aluno</a></li>
-            </ul>
-            <div class="mobile-menu" id="mobileMenu">
-                <button class="close" id="closeButton">
-                    <i class="fas fa-times"></i>
-                </button>
-                <ul class="nav-links-mobile">
-                    <li><a href="index.html#cursos">Cursos</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="https://app.faesma.com.br/captacao/public/selecao-curso">Matrícula</a></li>
-                    <li><a href="https://app.faesma.com.br/projetos/nucleo/uteis/login.php">Área do Aluno</a></li>
-                </ul> 
-            </div>
-            <button class="menu" id="menuButton">
-                    <i class="fas fa-bars"></i>
-            </button>                   
-        </header>
-        <section class="sobre-section">
-            <div class="sobre">
-            <h1>Histórico Institucional</h1>
-            <p>A Faculdade São Fidélis foi criada em 6 de abril de 2011, por meio da Portaria de Credenciamento n° 344, na cidade de São Fidélis, estado do Rio de Janeiro, constituindo-se como um marco relevante para a educação superior na região Norte fluminense.</p>
-            <p>Suas atividades acadêmicas tiveram início com o curso de Enfermagem e a licenciatura em Ciências Sociais. Em 10 de maio de 2011, realizou-se a aula inaugural da primeira turma de Enfermagem, consolidando o início de sua trajetória educacional. Em 2013, a instituição obteve a autorização para oferta do curso de Nutrição e, no ano seguinte, do curso de Educação Física, ampliando seu portfólio acadêmico.</p>
-            <p>O ano de 2014 foi particularmente significativo, marcado pela formatura da primeira turma de Ciências Sociais, que também representou a primeira colação de grau da Faculdade. Ainda em 2014, a instituição passou a integrar o Grupo Educacional Censupeg, momento que impulsionou sua expansão e fortalecimento acadêmico.</p>
-            <p>Nesse contexto, foi protocolado o credenciamento para a modalidade de Educação a Distância (EAD), com a autorização inicial de cinco cursos: Pedagogia, Tecnólogo em Processos Gerenciais, Tecnólogo em Recursos Humanos, Tecnólogo em Logística e Tecnólogo em Gestão Ambiental. A partir daí, a instituição ampliou sua presença para outras regiões do Brasil, em especial o Sul e o Sudeste, com a oferta de cursos reconhecidos pelo Ministério da Educação (MEC).</p>
-            <p>Em 2024, a Faculdade São Fidélis passou por uma nova etapa de transição, com suas operações assumidas pelo Instituto Alcance. Nesse processo, adotou a denominação <b>Faculdade Alcance de Ensino Superior do Maranhão – FAESMA</b>, ampliando sua área de atuação para as regiões Nordeste e Norte do país, com presença destacada no estado do Maranhão.</p>
-            <p>Atualmente, a instituição encontra-se em fase final de tramitação junto ao Ministério da Educação (MEC) para a oficialização da mudança de mantença, reafirmando seu compromisso em oferecer educação superior de excelência, voltada para o desenvolvimento regional e nacional.</p>
-            </div>            
-        </section>
-        <footer class="footer">
+            </ul> 
+        </div>
+        <button class="menu" id="menuButton">
+            <i class="fas fa-bars"></i>
+        </button>                   
+    </header>
+    <section class="formulario">
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="sf_cdb8nf2njic0mde2hmkg92hf">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Assunto</label>
+            <input type="text" name="subject" placeholder="Digite o assunto da mensagem" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+            <input type="hidden" name="redirectTo" value="https://brunoalex01.github.io/contato.html">
+        </form>
+    </section>
+    <footer class="footer">
         <div class="info-faesma" aria-label="Informações de endereço e números de contato">
-            <img loading="lazy" src="src/banners/FAESMA SEM FUNDO LETRA BRANCA.png" alt="Logo FAESMA letras brancas" width="30%">
+            <img src="src/banners/FAESMA SEM FUNDO LETRA BRANCA.png" alt="Logo FAESMA letras brancas" width="30%">
             <p><i class="fab fa-whatsapp" style="font-size: 1rem"></i> <a href="https://wa.me/98988487847">WhatsApp: (98) 98848-7847</a></p>
             <p><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/place/R.+F%C3%A9+Em+Deus,+150+-+Tirirical,+S%C3%A3o+Lu%C3%ADs+-+MA,+65055-190/@-2.5730266,-44.228095,3a,75y,53.65h,68.81t/data=!3m7!1e1!3m5!1s7Z5wr0T_JFPbbkiH-9RBjA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D21.191513335799357%26panoid%3D7Z5wr0T_JFPbbkiH-9RBjA%26yaw%3D53.64545044009043!7i16384!8i8192!4m15!1m8!3m7!1s0x7f69a988b899387:0x27e3abfc869cdbe9!2sR.+F%C3%A9+Em+Deus,+150+-+Tirirical,+S%C3%A3o+Lu%C3%ADs+-+MA,+65055-190!3b1!8m2!3d-2.573087!4d-44.2279601!16s%2Fg%2F11c2cgkbn5!3m5!1s0x7f69a988b899387:0x27e3abfc869cdbe9!8m2!3d-2.573087!4d-44.2279601!16s%2Fg%2F11c2cgkbn5?entry=ttu&g_ep=EgoyMDI1MDkyMy4wIKXMDSoASAFQAw%3D%3D">Rua Fé em Deus, 150 - Jardim São Cristóvão - São Luís - MA - CEP 65055-190</a></p>
             <p><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/search/Rua+Dom+Lic%C3%ADnio+Rangel,+316+-+Bairro+Gamboa+-+S%C3%A3o+Fid%C3%A9lis+-+RJ+-+CEP+28400-000/@-21.6451438,-41.7715673,15z?entry=ttu&g_ep=EgoyMDI1MDkyMy4wIKXMDSoASAFQAw%3D%3D">Rua Dom Licínio Rangel, 316 - Bairro Gamboa - São Fidélis - RJ - CEP 28400-000</a></p>

@@ -183,3 +183,7 @@ menuButton.addEventListener("click", function() {
 closeButton.addEventListener("click", function() {
     mobileMenu.classList.remove("flex");
 });
+
+function emailEnviado() {
+    alert('Email enviado com sucesso!')
+};
