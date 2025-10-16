@@ -1,3 +1,4 @@
+// Menu mobile
 const menuButton = document.querySelector("#menuButton");
 const closeButton = document.querySelector("#closeButton");
 const mobileMenu = document.querySelector("#mobileMenu");
@@ -25,7 +26,7 @@ const cursos = {
             img: "src/cursos/historia.jpg", alt:"Curso de História",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=1"
         },
-         { 
+        { 
             titulo: "Educação Física", 
             img: "src/cursos/ed-fisica.jpg", alt:"Curso de Educação Física",
             url: "https://app.faesma.com.br/captacao/public/v2/pre-cadastro?cd_oferta=8"
@@ -183,7 +184,3 @@ menuButton.addEventListener("click", function() {
 closeButton.addEventListener("click", function() {
     mobileMenu.classList.remove("flex");
 });
-
-function emailEnviado() {
-    alert('Email enviado com sucesso!')
-};

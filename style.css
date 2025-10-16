@@ -529,7 +529,7 @@ body {
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.2s;
-    background: linear-gradient(150deg, var(--primary-green), var(--primary-blue));
+    background: linear-gradient(150deg, var(--primary-blue), var(--primary-green));
     border-radius: 15px;
     box-shadow: 0 4px 20px var(--primary-green);
     backdrop-filter: blur(2px);
@@ -574,7 +574,7 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 20px 40px;
-    background: linear-gradient(150deg, var(--primary-green), var(--primary-blue));
+    background: linear-gradient(150deg, var(--primary-blue), var(--primary-green));
     color: var(--text-light);
     width:750px;
     box-shadow: 0 5px 15px var(--primary-green);
@@ -621,6 +621,7 @@ body {
     margin-bottom: 20px;
     transition: all 0.5s;
     border-radius: 5px;
+    font-family: var(--font-family);
 }
 
 .formulario textarea:focus {
@@ -649,7 +650,6 @@ body {
     box-shadow: 0 2px 15px var(--accent);
 }
 
-
 /* Responsividade */
 @media (max-width: 768px) {
     .nav-links-desktop{
@@ -677,4 +677,9 @@ body {
         width: 80%;
         height: auto;
     }
+
+    .formulario  {
+        width: 80%;
+        height: auto;
+    }   
 }

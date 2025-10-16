@@ -15,7 +15,7 @@
     <header class="navbar">
         <div class="nav-logo" aria-label="Ícone que volta ao índice">
             <a href="index.html">
-                <img src="src/banners/FAESMA SEM FUNDO LETRA BRANCA.png" alt="FAESMA Logo, clique para ir ao início" width="30%">
+                <img src="src/banners/FAESMA SEM FUNDO LETRA BRANCA.png" alt="FAESMA Logo, clique para ir ao início" width="25%">
             </a>
         </div>
         <ul class="nav-links-desktop">
@@ -42,10 +42,11 @@
             <i class="fas fa-bars"></i>
         </button>                   
     </header>
-    <section class="formulario">
+    <!-- Sessão do formulário -->
+    <section class="formulario" aria-label="Formulário de contato">
         <h2>Contato</h2>
-        <form action="https://api.staticforms.xyz/submit" method="post">
-            <input type="hidden" name="accessKey" value="sf_cdb8nf2njic0mde2hmkg92hf">
+        <form action="https://api.staticforms.xyz/submit" method="post"> <!-- api gerada pelo site https://www.staticforms.xyz/ -->
+            <input type="hidden" name="accessKey" value="sf_cdb8nf2njic0mde2hmkg92hf"> <!-- chave gerada pelo registro no site https://www.staticforms.xyz/ -->
             <label>Nome</label>
             <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
             <label>Email</label>
